@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "ambleregular";
+  src: url("./fonts\amble\Amble-Regular-webfont.eot");
+  src: url("./fonts\amble\Amble-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts\amble\Amble-Regular-webfont.woff2") format("woff2"),
+    url("./fonts\amble\Amble-Regular-webfont.woff") format("woff"),
+    url("./fonts\amble\Amble-Regular-webfont.ttf") format("truetype"),
+    url("./fonts\amble\Amble-Regular-webfont.svg#ambleregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "amblelight";
+  src: url("./fonts\amble\Amble-Light-webfont.eot");
+  src: url("./fonts\amble\Amble-Light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts\amble\Amble-Light-webfont.woff2") format("woff2"),
+    url("./fonts\amble\Amble-Light-webfont.woff") format("woff"),
+    url("./fonts\amble\Amble-Light-webfont.ttf") format("truetype"),
+    url("./fonts\amble\Amble-Light-webfont.svg#amblelight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "amblelight_condensed";
+  src: url("./fonts\amble\Amble-LightCondensed-webfont.eot");
+  src: url("./fonts\amble\Amble-LightCondensed-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts\amble\Amble-LightCondensed-webfont.woff2") format("woff2"),
+    url("./fonts\amble\Amble-LightCondensed-webfont.woff") format("woff"),
+    url("./fonts\amble\Amble-LightCondensed-webfont.ttf") format("truetype"),
+    url("./fonts\amble\Amble-LightCondensed-webfont.svg#amblelight_condensed")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("./img/ddp-background.svg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.floating-logo {
+  z-index: -1;
+  position: fixed;
+  margin: auto;
+}
+
+.page-content {
+  background-color: rgba(37, 37, 37, 0.98);
+  display: block;
+  width: 60%;
+  margin: auto;
+  z-index: 2;
+  padding-left: 5em;
+  padding-right: 5em;
+  border-radius: 10px;
+}
+
+header {
+  background-color: rgba(70, 35, 35, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  border-bottom: 1px;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: red, 5px;
+}
+
+.titre-site::after
+  {
+    content: " Page exemple";
+    color: white;
+    font-size: 25px;
+    font-family: "ambleregular", 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+.trd-empty {
+  width: auto;
+}
+
+/* Navigation */
+
+nav ul {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: auto;
+  height: auto;
+  position: fixed;
+  background-color: rgba(27, 38, 59, 0.99);
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 10, 0.8);
+  text-align: end;
+  padding: 10px 10px 10px 10px;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+nav a {
+  font-size: 1.3em;
+  font-family: "amblelight", sans-serif;
+  color: white;
+  text-align: justify;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  border-bottom: 1px solid rgba(139, 25, 25, 0.5);
+}
+
+p {
+  font-family: "amblelight", sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+h1 {
+  font-family: "ambleregular", sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 5px black;
+}
+
+h2 {
+  font-family: "ambleregular", sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 5px black 1px;
+}
+
+h3 {
+  font-family: "ambleregular", sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 1px black 1px;
+}
+
+.web-logo {
+  width: 50px;
+}
+
+.youtube-dolor {
+  display: flex;
+  align-content: space-between;
+}
+
+iframe {
+  padding: inherit;
+  width: 560px;
+  height: 315px;
+}
+
+.video-text-span {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 35px 35px 35px 35px;
+  background-color: rgba(30, 10, 10, 1);
+  border-left: 0px;
+  border-right: 1px;
+  border-radius: 0px 10px 10px 0px;
+  text-align: justify;
+  height: 245px;
+}
+
+.dolor-sit {
+  overflow: hidden;
+  display: flex;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 0.3em;
+  padding: 0.3em;
+  width: 500px;
+}
+
+.acolyte {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 0.3em;
+  padding: 0.3em;
+}
+
+#Le-Discord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: rgba(70, 35, 35, 0.95);
+  display: flex;
+  align-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px;
+  box-shadow: 2px, black;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+}
+
+.footer-site {
+  font-family: "amblelight", "Arial Narrow Bold", sans-serif;
+  display: block;
+  text-align: center;
+  color: rgb(150, 150, 150);
+  font-size: 10px;
+  margin: auto;
+}
+
+/* Règles pour petits écrans */
+@media screen and (max-width: 1280px) {
+  .youtube-dolor {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
+  
+  iframe {
+    padding: inherit;
+    height: auto;
+    width: auto;
+    min-width: 200px;
+  }
+  
+  .video-text-span {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 35px 35px 35px 35px;
+    background-color: rgba(30, 10, 10, 1);
+    border-left: 0px;
+    border-right: 1px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: justify;
+    height: 245px;
+    overflow: scroll;
+    width: auto;
+    min-width: 230px;
+    font-size: 14px;
+  
+  }
+
+  .dolor-sit {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0.3em;
+    padding: 0.3em;
+    min-width: 230px;
+    width: auto;
+  }
+
+  header {
+    
+    min-width: 230px;
+  }
+
+  .titre-site::after
+  {
+    content: "";
+  }
+  
+  /* Navigation */
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    min-width: .6em;
+    height: auto;
+    text-align: center;
+    padding: .2em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    opacity: .3;
+  }
+
+  nav ul:hover{
+    opacity: .9;
+  }
+  
+  nav li {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;
+  }
+  
+  nav a {
+    font-size: 0.8em;
+    font-family: "amblelight", sans-serif;
+    color: white;
+    text-align: justify;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: red;
+    border-bottom: 1px solid rgba(139, 25, 25, 0.5);
+  }
+  
+}
